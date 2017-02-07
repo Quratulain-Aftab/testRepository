@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PhotoEditingExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>8281EF431E485C1B00D3F4B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>829C707A1E49CC0D0012D976</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825830F11E498C26007AEB36 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825830F01E498C26007AEB36 /* FilterCell.swift */; };
 		8281EF291E485C1B00D3F4B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281EF281E485C1B00D3F4B4 /* AppDelegate.swift */; };
 		8281EF2B1E485C1B00D3F4B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281EF2A1E485C1B00D3F4B4 /* ViewController.swift */; };
 		8281EF2E1E485C1B00D3F4B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8281EF2C1E485C1B00D3F4B4 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		8281EF331E485C1B00D3F4B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8281EF311E485C1B00D3F4B4 /* LaunchScreen.storyboard */; };
 		8281EF3E1E485C1B00D3F4B4 /* PerfectClickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281EF3D1E485C1B00D3F4B4 /* PerfectClickTests.swift */; };
 		8281EF491E485C1B00D3F4B4 /* PerfectClickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281EF481E485C1B00D3F4B4 /* PerfectClickUITests.swift */; };
+		829C707E1E49CC0D0012D976 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829C707D1E49CC0D0012D976 /* PhotosUI.framework */; };
+		829C70801E49CC0D0012D976 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829C707F1E49CC0D0012D976 /* Photos.framework */; };
+		829C70831E49CC0D0012D976 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C70821E49CC0D0012D976 /* PhotoEditingViewController.swift */; };
+		829C70861E49CC0D0012D976 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829C70841E49CC0D0012D976 /* MainInterface.storyboard */; };
+		829C708A1E49CC0D0012D976 /* PhotoEditingExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 829C707B1E49CC0D0012D976 /* PhotoEditingExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		829C70901E49D0AE0012D976 /* cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 829C708F1E49D0AE0012D976 /* cover.jpg */; };
+		829C70921E49D3160012D976 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829C70911E49D3160012D976 /* FilterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +39,31 @@
 			remoteGlobalIDString = 8281EF241E485C1B00D3F4B4;
 			remoteInfo = PerfectClick;
 		};
+		829C70881E49CC0D0012D976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8281EF1D1E485C1B00D3F4B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 829C707A1E49CC0D0012D976;
+			remoteInfo = PhotoEditingExt;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		829C708E1E49CC0D0012D976 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				829C708A1E49CC0D0012D976 /* PhotoEditingExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		825830F01E498C26007AEB36 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		8281EF251E485C1B00D3F4B4 /* PerfectClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8281EF281E485C1B00D3F4B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8281EF2A1E485C1B00D3F4B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +77,14 @@
 		8281EF441E485C1B00D3F4B4 /* PerfectClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfectClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8281EF481E485C1B00D3F4B4 /* PerfectClickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectClickUITests.swift; sourceTree = "<group>"; };
 		8281EF4A1E485C1B00D3F4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829C707B1E49CC0D0012D976 /* PhotoEditingExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditingExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		829C707D1E49CC0D0012D976 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		829C707F1E49CC0D0012D976 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		829C70821E49CC0D0012D976 /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		829C70851E49CC0D0012D976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		829C70871E49CC0D0012D976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829C708F1E49D0AE0012D976 /* cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpg; sourceTree = "<group>"; };
+		829C70911E49D3160012D976 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +109,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		829C70781E49CC0D0012D976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829C707E1E49CC0D0012D976 /* PhotosUI.framework in Frameworks */,
+				829C70801E49CC0D0012D976 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +127,8 @@
 				8281EF271E485C1B00D3F4B4 /* PerfectClick */,
 				8281EF3C1E485C1B00D3F4B4 /* PerfectClickTests */,
 				8281EF471E485C1B00D3F4B4 /* PerfectClickUITests */,
+				829C70811E49CC0D0012D976 /* PhotoEditingExt */,
+				829C707C1E49CC0D0012D976 /* Frameworks */,
 				8281EF261E485C1B00D3F4B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +139,7 @@
 				8281EF251E485C1B00D3F4B4 /* PerfectClick.app */,
 				8281EF391E485C1B00D3F4B4 /* PerfectClickTests.xctest */,
 				8281EF441E485C1B00D3F4B4 /* PerfectClickUITests.xctest */,
+				829C707B1E49CC0D0012D976 /* PhotoEditingExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +153,7 @@
 				8281EF2F1E485C1B00D3F4B4 /* Assets.xcassets */,
 				8281EF311E485C1B00D3F4B4 /* LaunchScreen.storyboard */,
 				8281EF341E485C1B00D3F4B4 /* Info.plist */,
+				825830F01E498C26007AEB36 /* FilterCell.swift */,
 			);
 			path = PerfectClick;
 			sourceTree = "<group>";
@@ -125,6 +176,27 @@
 			path = PerfectClickUITests;
 			sourceTree = "<group>";
 		};
+		829C707C1E49CC0D0012D976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				829C707D1E49CC0D0012D976 /* PhotosUI.framework */,
+				829C707F1E49CC0D0012D976 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829C70811E49CC0D0012D976 /* PhotoEditingExt */ = {
+			isa = PBXGroup;
+			children = (
+				829C70911E49D3160012D976 /* FilterCell.swift */,
+				829C708F1E49D0AE0012D976 /* cover.jpg */,
+				829C70821E49CC0D0012D976 /* PhotoEditingViewController.swift */,
+				829C70841E49CC0D0012D976 /* MainInterface.storyboard */,
+				829C70871E49CC0D0012D976 /* Info.plist */,
+			);
+			path = PhotoEditingExt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +207,12 @@
 				8281EF211E485C1B00D3F4B4 /* Sources */,
 				8281EF221E485C1B00D3F4B4 /* Frameworks */,
 				8281EF231E485C1B00D3F4B4 /* Resources */,
+				829C708E1E49CC0D0012D976 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				829C70891E49CC0D0012D976 /* PBXTargetDependency */,
 			);
 			name = PerfectClick;
 			productName = PerfectClick;
@@ -181,6 +255,23 @@
 			productReference = 8281EF441E485C1B00D3F4B4 /* PerfectClickUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		829C707A1E49CC0D0012D976 /* PhotoEditingExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 829C708D1E49CC0D0012D976 /* Build configuration list for PBXNativeTarget "PhotoEditingExt" */;
+			buildPhases = (
+				829C70771E49CC0D0012D976 /* Sources */,
+				829C70781E49CC0D0012D976 /* Frameworks */,
+				829C70791E49CC0D0012D976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEditingExt;
+			productName = PhotoEditingExt;
+			productReference = 829C707B1E49CC0D0012D976 /* PhotoEditingExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +299,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8281EF241E485C1B00D3F4B4;
 					};
+					829C707A1E49CC0D0012D976 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D7HQN29Z8Z;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8281EF201E485C1B00D3F4B4 /* Build configuration list for PBXProject "PerfectClick" */;
@@ -226,6 +322,7 @@
 				8281EF241E485C1B00D3F4B4 /* PerfectClick */,
 				8281EF381E485C1B00D3F4B4 /* PerfectClickTests */,
 				8281EF431E485C1B00D3F4B4 /* PerfectClickUITests */,
+				829C707A1E49CC0D0012D976 /* PhotoEditingExt */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +352,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		829C70791E49CC0D0012D976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829C70861E49CC0D0012D976 /* MainInterface.storyboard in Resources */,
+				829C70901E49D0AE0012D976 /* cover.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8281EF2B1E485C1B00D3F4B4 /* ViewController.swift in Sources */,
+				825830F11E498C26007AEB36 /* FilterCell.swift in Sources */,
 				8281EF291E485C1B00D3F4B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		829C70771E49CC0D0012D976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				829C70831E49CC0D0012D976 /* PhotoEditingViewController.swift in Sources */,
+				829C70921E49D3160012D976 /* FilterCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +411,11 @@
 			isa = PBXTargetDependency;
 			target = 8281EF241E485C1B00D3F4B4 /* PerfectClick */;
 			targetProxy = 8281EF451E485C1B00D3F4B4 /* PBXContainerItemProxy */;
+		};
+		829C70891E49CC0D0012D976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 829C707A1E49CC0D0012D976 /* PhotoEditingExt */;
+			targetProxy = 829C70881E49CC0D0012D976 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +434,14 @@
 				8281EF321E485C1B00D3F4B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		829C70841E49CC0D0012D976 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				829C70851E49CC0D0012D976 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +543,7 @@
 		8281EF4E1E485C1B00D3F4B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D7HQN29Z8Z;
 				INFOPLIST_FILE = PerfectClick/Info.plist;
@@ -427,6 +557,7 @@
 		8281EF4F1E485C1B00D3F4B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D7HQN29Z8Z;
 				INFOPLIST_FILE = PerfectClick/Info.plist;
@@ -495,6 +626,32 @@
 			};
 			name = Release;
 		};
+		829C708B1E49CC0D0012D976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D7HQN29Z8Z;
+				INFOPLIST_FILE = PhotoEditingExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oracular.PerfectClick.PhotoEditingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		829C708C1E49CC0D0012D976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D7HQN29Z8Z;
+				INFOPLIST_FILE = PhotoEditingExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oracular.PerfectClick.PhotoEditingExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +671,7 @@
 				8281EF4F1E485C1B00D3F4B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8281EF501E485C1B00D3F4B4 /* Build configuration list for PBXNativeTarget "PerfectClickTests" */ = {
 			isa = XCConfigurationList;
@@ -522,12 +680,22 @@
 				8281EF521E485C1B00D3F4B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8281EF531E485C1B00D3F4B4 /* Build configuration list for PBXNativeTarget "PerfectClickUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8281EF541E485C1B00D3F4B4 /* Debug */,
 				8281EF551E485C1B00D3F4B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		829C708D1E49CC0D0012D976 /* Build configuration list for PBXNativeTarget "PhotoEditingExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				829C708B1E49CC0D0012D976 /* Debug */,
+				829C708C1E49CC0D0012D976 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

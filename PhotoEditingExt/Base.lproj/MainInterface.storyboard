@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oey-1y-ouo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Editing View Controller-->
+        <scene sceneID="8jV-tA-iAC">
+            <objects>
+                <viewController id="oey-1y-ouo" customClass="PhotoEditingViewController" customModule="PhotoEditingExt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zUW-pe-ks4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Omv-8F-uUl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6g-sa-KCh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZN-KG-9on">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU2-sQ-q73">
+                                        <rect key="frame" x="162" y="30" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDs-W8-xbS">
+                                        <rect key="frame" x="8" y="25" width="31" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <state key="normal" title="Save"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="DaV-co-QrB">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="84"/>
+                                    </constraint>
+                                    <constraint firstItem="QDs-W8-xbS" firstAttribute="top" secondItem="UZN-KG-9on" secondAttribute="top" constant="25" id="I5h-CR-bCR"/>
+                                    <constraint firstItem="PU2-sQ-q73" firstAttribute="top" secondItem="UZN-KG-9on" secondAttribute="top" constant="30" id="UWr-5R-cKo"/>
+                                    <constraint firstItem="QDs-W8-xbS" firstAttribute="leading" secondItem="UZN-KG-9on" secondAttribute="leading" constant="8" id="eLM-ZD-8h1"/>
+                                    <constraint firstItem="PU2-sQ-q73" firstAttribute="centerX" secondItem="UZN-KG-9on" secondAttribute="centerX" id="sxv-th-X8x"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmK-Qf-HOk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="491"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ifs-fA-SYL">
+                                        <rect key="frame" x="0.0" y="140" width="375" height="211"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ifs-fA-SYL" secondAttribute="height" multiplier="256:144" id="VPS-Jw-Pie"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u29-eg-p26">
+                                        <rect key="frame" x="179" y="465" width="16" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ifs-fA-SYL" firstAttribute="centerY" secondItem="gmK-Qf-HOk" secondAttribute="centerY" id="3Ac-XO-FZd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ifs-fA-SYL" secondAttribute="trailing" id="pRY-73-nuS"/>
+                                    <constraint firstItem="ifs-fA-SYL" firstAttribute="leading" secondItem="gmK-Qf-HOk" secondAttribute="leading" id="pva-p3-3yV"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hVL-Nh-6eO">
+                                <rect key="frame" x="0.0" y="555" width="375" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="phY-y8-HMH"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aEU-5f-bdI">
+                                    <size key="itemSize" width="110" height="91"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterCellIdentifier" id="ZQI-vo-xki" customClass="FilterCell" customModule="PhotoEditingExt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="110" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vcP-y3-I9F">
+                                                    <rect key="frame" x="2" y="2" width="106" height="87"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="vcP-y3-I9F" secondAttribute="bottom" constant="2" id="GZ4-rq-CFU"/>
+                                            <constraint firstItem="vcP-y3-I9F" firstAttribute="top" secondItem="ZQI-vo-xki" secondAttribute="top" constant="2" id="XkS-QC-kFJ"/>
+                                            <constraint firstItem="vcP-y3-I9F" firstAttribute="leading" secondItem="ZQI-vo-xki" secondAttribute="leading" constant="2" id="kCY-hr-ZBR"/>
+                                            <constraint firstAttribute="trailing" secondItem="vcP-y3-I9F" secondAttribute="trailing" constant="2" id="ofy-sv-GqM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="vcP-y3-I9F" id="7cT-8j-Jlm"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oey-1y-ouo" id="XEU-PL-dLA"/>
+                                    <outlet property="delegate" destination="oey-1y-ouo" id="lrB-14-57O"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gmK-Qf-HOk" firstAttribute="top" secondItem="UZN-KG-9on" secondAttribute="bottom" id="FwN-Ki-vDW"/>
+                            <constraint firstAttribute="trailing" secondItem="UZN-KG-9on" secondAttribute="trailing" id="HHd-Rj-E9s"/>
+                            <constraint firstItem="UZN-KG-9on" firstAttribute="leading" secondItem="g6g-sa-KCh" secondAttribute="leading" id="LEQ-5v-rle"/>
+                            <constraint firstItem="hVL-Nh-6eO" firstAttribute="leading" secondItem="g6g-sa-KCh" secondAttribute="leading" id="OzD-Wu-bzf"/>
+                            <constraint firstItem="Omv-8F-uUl" firstAttribute="top" secondItem="hVL-Nh-6eO" secondAttribute="bottom" constant="12" id="ac7-i7-FqB"/>
+                            <constraint firstAttribute="trailing" secondItem="gmK-Qf-HOk" secondAttribute="trailing" id="bHW-l0-6Oo"/>
+                            <constraint firstItem="UZN-KG-9on" firstAttribute="top" secondItem="g6g-sa-KCh" secondAttribute="top" id="cWt-MP-pOG"/>
+                            <constraint firstItem="hVL-Nh-6eO" firstAttribute="top" secondItem="gmK-Qf-HOk" secondAttribute="bottom" id="d6S-1n-qaD"/>
+                            <constraint firstAttribute="trailing" secondItem="hVL-Nh-6eO" secondAttribute="trailing" id="iMA-IY-n8x"/>
+                            <constraint firstItem="gmK-Qf-HOk" firstAttribute="leading" secondItem="g6g-sa-KCh" secondAttribute="leading" id="lyo-An-8k5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FiltersCollectionView" destination="hVL-Nh-6eO" id="2wI-gc-bhP"/>
+                        <outlet property="originalImage" destination="ifs-fA-SYL" id="o0y-3j-Kjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="871-Wb-1CQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cover.jpg" width="2560" height="1440"/>
+    </resources>
+</document>
